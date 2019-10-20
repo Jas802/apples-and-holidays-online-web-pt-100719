@@ -66,6 +66,6 @@ def all_holidays_with_bbq(holiday_hash)
 holiday_hash.collect do |season, holidays|  # return an array of holiday names (as symbols) where supply lists
 holidays.collect do |holiday, supplies|
   holiday if supplies.indlude?("BBQ")
-end  # include the string "BBQ"
-end.flatten.compact
+  end  # include the string "BBQ"
+ end.flatten.compact
 end
